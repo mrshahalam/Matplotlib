@@ -1,0 +1,11 @@
+import matplotlib.pyplot as plt
+y_views =[234,235,236,237,238,239,230,876,456,367,464,678,653,347]
+bins =[100,200,300,400,500,600,700,800,900,1000]
+
+plt.hist( y_views,bins,label='youtube views')
+plt.xlabel('days')
+plt.ylabel('views')
+plt.grid(True,linewidth=1,color='g',linestyle=':')
+plt.xticks(bins)
+plt.legend()
+plt.show()
