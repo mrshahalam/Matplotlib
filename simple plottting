@@ -1,0 +1,5 @@
+import matplotlib.pyplot as plt
+views =[534,453,675,235,367,765,453]
+days= range(1,8)
+plt.plot(days,views)
+plt.show()
