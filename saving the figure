@@ -1,0 +1,14 @@
+import matplotlib.pyplot as plt
+y_views =[234,235,236,237,238,239,230]
+f_views=[243,244,245,246,247,248,249]
+t_views=[253,254,255,256,257,258,259]
+days= range(1,8)
+plt.plot(y_views,label='youtube views')
+plt.plot(f_views,label='facebook views')
+plt.plot(t_views,label='twiter views')
+plt.xlabel('days')
+plt.ylabel('views')
+plt.grid(True,linewidth=1,color='g',linestyle=':')
+plt.savefig('D:\zubair file\image1.png',dpi=500,facecolor='g')
+plt.legend()
+plt.show()
