@@ -1,0 +1,7 @@
+import matplotlib.pyplot as plt
+import numpy as np
+labels=['facebook','instagram','twitter','youtube']
+views=[357,768,365,276]
+explode=[0,0.3,0,0]
+plt.pie(views,labels=labels,explode=explode,autopct='%1.1f%%' ,shadow=True)
+plt.show()
