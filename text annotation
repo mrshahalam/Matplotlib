@@ -1,0 +1,13 @@
+import matplotlib.pyplot as plt
+
+y_views = [234, 235, 236, 237, 238, 239, 230, 876, 456, 367, 464, 678, 653, 347]
+x = range(1, 15)
+min_y=min( y_views)
+x_co=x[y_views.index(min_y)]
+plt.plot(x, y_views, label='youtube views')
+plt.xlabel('x')
+plt.ylabel('views')
+plt.grid(True, linewidth=1, color='g', linestyle=':')
+plt.annotate('lowest value',xy=(x_co,min_y),xytext=(5,300))
+plt.legend()
+plt.show()
