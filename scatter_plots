@@ -1,0 +1,9 @@
+import matplotlib.pyplot as plt
+y_views =[234,235,236,237,238,239,230,876,456,367,464,678,653,347]
+days= range(1,15)
+plt.scatter(days,y_views,label='youtube views')
+plt.xlabel('days')
+plt.ylabel('views')
+plt.grid(True,linewidth=1,color='g',linestyle=':')
+plt.legend()
+plt.show()
