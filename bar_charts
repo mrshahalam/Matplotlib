@@ -1,0 +1,12 @@
+import matplotlib.pyplot as plt
+y_views =[234,235,236,237,238,239,230,876,456,367,464,678,653,347]
+f_views =[234,235,236,237,238,239,230,876,456,367,464,678,653,347]
+x= range(1,15)
+plt.bar([a-0.25for a in x],y_views,width=0.25,label='youtube views',align='edge')
+plt.bar([a+0.25 for a in x],f_views,width=-0.25,label='facebook views',align='edge')
+plt.xlabel('days')
+plt.ylabel('views')
+plt.grid(True,linewidth=1,color='g',linestyle=':')
+plt.xticks(x)
+plt.legend()
+plt.show()
